@@ -1,0 +1,117 @@
+body{
+    background-color: rgb(41, 40, 40);
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+/*-------HEADER-------*/
+.Navegador1{
+    height: 79px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.Logo1{
+    background-color: white;
+    height: 73px;
+    width: 100%;
+}
+
+
+.Logox{
+    margin-left: 80px;
+    margin-top: 1px;
+    height: 100%;
+    width: 27%;
+    cursor: pointer;
+}
+
+.logox:hover{
+    transform: scale(1.3);
+}
+
+
+.menu{
+    background-color: rgb(12, 12, 12);
+    height: 73px;
+    width: 100%;
+   
+}
+
+.navegador ul{
+    justify-content: space-between;
+    margin-right: 60px;
+    margin-left:30px;
+    margin-top: 27px;
+    display: flex;
+    list-style: none;
+}
+
+.navegador a{
+    text-decoration: none;
+    color:white;
+}
+
+.navegador a:hover{
+    border-radius: 3px;
+    font-weight: bold;
+    text-decoration: none;
+    color:red;
+}
+
+/*-------FIN HEADER-------*/
+.navbar{
+    background-color:  rgb(41, 40, 40);;
+}
+.vistaresponsive{
+    display: none;
+}
+.form-label{
+    color: white;
+}
+H1{
+    color: white;
+    font-size: 30PX;
+}
+.Cuerpo3{
+    height: 620px;
+    background-image: url("../Imagenes/Fondo\ contactos.jpg");
+}
+.bts{
+    width: 101%;
+    height: 30px;
+    
+}
+.piedepaginabts{
+    
+    background-color: rgb(12, 12, 12);
+
+}
+.piedepaginabts a{
+    text-decoration: none;
+    color:white;
+}
+.piedepaginabts a:hover{
+    border-radius: 3px;
+    font-weight: bold;
+    text-decoration: none;
+    color:red;
+}
+.piedepaginabts p{
+    color:white;
+}
+
+@media (min-width: 350px) and (max-width: 1000px){  
+    .cuerpogral{
+        display: none;
+    }
+    .vistaresponsive{
+        display: contents;
+    }   
+    .row{
+        margin-left: 5px;
+    }
+    .btsRESPONSIVE{
+        background-color: rgb(12, 12, 12);
+    }
+    
+}

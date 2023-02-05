@@ -1,0 +1,254 @@
+/*BORDES PARA LOCALIZAR HEADER*/
+/*
+.Navegador1{
+    border: solid 3px red;
+}
+.Logo1{
+    border:solid 3px blue;
+}
+.navegador ul{
+    border: solid 3px orange;
+}
+.navegador li{
+    border: solid 3px violet;
+}
+.navegador a{
+    border: solid 3px red;
+}
+.menu{
+    border:solid 3px yellow;
+}
+*/
+/*-------HEADER-------*/
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(imagenes/Fondo.jpg); 
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+.Navegador1{
+    height: 79px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.Logo1{
+    background-color: white;
+    height: 73px;
+    width: 100%;
+}
+
+
+.Logox{
+    margin-left: 80px;
+    margin-top: 1px;
+    height: 100%;
+    width: 27%;
+    cursor: pointer;
+}
+
+.logo:hover{
+    transform: scale(1.2);
+}
+
+
+.menu{
+    background-color: rgb(12, 12, 12);
+    height: 73px;
+    width: 100%;
+   
+}
+
+.navegador ul{
+    justify-content: space-between;
+    margin-right: 60px;
+    margin-left:30px;
+    margin-top: 27px;
+    display: flex;
+    list-style: none;
+}
+
+.navegador a{
+    text-decoration: none;
+    color:white;
+}
+
+.navegador a:hover{
+    border-radius: 3px;
+    font-weight: bold;
+    text-decoration: none;
+    color:red;
+}
+
+/*-------FIN HEADER-------*/
+
+/*---------CUERPO---------*/
+
+/*
+.header{
+    border: solid 3px green;
+}
+.mva{
+    border: solid 3px blue;
+}
+
+.motorvirtual{
+    border: solid 3px violet;
+}*/
+
+.cuerpo{
+    /*border: solid 3px yellow;*/
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50%;
+    height: 500px;
+}
+
+.imagen{
+    /*border: solid 3px red;*/
+    height: 494px;
+}
+
+.imagen_inicio1{
+    width: 550px;
+    height: 450px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.imagen_inicio1:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.mva p{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 150px;
+    color: white;
+    margin-left: 190px;
+    margin-top: 112px;
+}
+
+.motorvirtual P{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    color: white;
+    margin-left: 189px;
+    margin-top: 30px;
+}
+/*---------FIN CUERPO---------*/
+
+/*---------FOOTER---------*/
+
+.footer1{
+    /*border: solid 3px yellow;*/
+    background-color: rgb(12, 12, 12);
+    height: 66px;    
+}
+
+.piedepagina{
+    /*border: solid 3px red;*/
+    display: grid;
+    height: 40px;
+    grid-template-rows: 50% 50%;    
+    justify-items: center;
+    align-items: center;
+}
+.Redes{
+    /*border: solid 3px red;*/
+    margin-top: 15px;
+}
+.Redes a{
+    /*border: solid 3px orange;*/
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+    margin-top: 15px;
+}
+.Redes a:hover{
+    color: red;
+}
+
+.Derechos{
+    /*border: solid 3px blue;*/
+    padding-top: 17px;
+    color:white;
+    height: 30px;
+}
+.Derechos h1{
+    font-size: 15px;
+}
+/*---------FIN FOOTER---------*/
+
+/*---------BOOTSTRAP---------*/
+.bts{
+    display: none;
+}
+.cuerpo_boot{
+    display: none;
+}
+
+
+/*---------HEADER---------*/
+
+@media (min-width: 350px) and (max-width: 1000px){
+
+    .bts{
+        display: contents;
+    }
+    .cuerpo_boot{
+        display: contents;
+    }
+
+    .container-fluid a{
+        font-weight: bold;
+    }
+    .cuerpo_boot{
+        /*border:solid 3px blue;*/
+        padding-top: 53px;
+        margin-top: 53;
+    }
+    .cuerpo1{
+        /*border: solid 3px red;*/
+        margin-top: 75px;
+    }
+    .col h1{
+        /*border: solid 3px blue;*/
+        font-family: 'Bebas Neue';
+        font-size: 100px;
+        color:white;
+    }
+    .col p{
+        /*border: solid 3px red;*/
+        font-family: 'Bebas Neue';
+        font-size: 50px;
+        color:white;    
+    }
+    
+    .piedepaginabts{
+        border:solid 3px rgb(12, 12, 12);
+        background-color: rgb(12, 12, 12);
+    
+    }
+ 
+    .piedepaginabts a{
+        text-decoration: none;
+        color:white;
+    }
+    .piedepaginabts p{
+        color:white;
+    }
+    .Navegador1{
+        display: none;
+    }
+    .cuerpo{
+        display: none;
+    }
+    .footer1{
+        display: none;
+    }
+
+}
+   
