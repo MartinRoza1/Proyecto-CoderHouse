@@ -22,7 +22,7 @@
 /*-------HEADER-------*/
 body{
     font-family: 'Montserrat', sans-serif;
-    background-image: url(..imagenes/Fondo.jpg); 
+    background-image: url(..Imagenes/Fondo.jpg); 
     padding: 0px;
     margin: 0px;
     display: grid;
