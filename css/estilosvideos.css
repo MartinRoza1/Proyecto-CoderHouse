@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    background-image: url(../Imagenes/Fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+}
+.vistaresponsive{
+    display: none;
+}
+.main-responsive{
+    display: none;
+}
+.body1 > *{
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+.header1{
+    grid-area: header;
+    background-color: rgb(101, 101, 247);
+}
+.Cuerpo{
+    padding: 0;
+    margin: 0;
+}
+.TITULO-1{
+    height: 50px;
+    grid-area: titulo1;
+    background-color: white;
+
+}
+.TITULO-1 P{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    
+
+}
+.TITULO-2{
+    grid-area: titulo2;
+    background-color: rgb(12, 12, 12);
+    height: 50px;
+}
+.TITULO-2 p{
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    grid-area: main1;
+}
+.TITULO-3{
+    grid-area: titulo3;
+    background-color: rgb(12, 12, 12);
+    height: 50px;
+}
+.TITULO-3 P{
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.main2{
+    grid-area: main2;
+}
+.footer1{
+    grid-area: footer;
+    background-color: rgb(104, 104, 104);
+}
+.vistaresponsive{
+    grid-area: header;
+    border: solid 3px blue;
+}
+.body1{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "titulo1"
+        "titulo2"
+        "main1"
+        "titulo3"
+        "main2" 
+        "footer";
+}
+/*----VERSION ESCRITORIO----*/
+/*----HEADER----*/
+.header1{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.Logo1{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+
+.Logox{
+    height: 100%;
+    width: 27%;
+    cursor: pointer;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.menu{
+    background-color: rgb(12, 12, 12);
+    height: 100%;
+    width: 100%;
+}
+
+.navegador ul{
+    justify-content: space-between;
+    margin-right: 60px;
+    margin-left:30px;
+    margin-top: 27px;
+    display: flex;
+    list-style: none;
+}
+
+.navegador a{
+    text-decoration: none;
+    color:white;
+}
+
+.navegador a:hover{
+    border-radius: 3px;
+    font-weight: bold;
+    text-decoration: none;
+    color:red;
+}
+
+/*-------FIN HEADER-------*/
+/*------MAIN-------*/
+.main{
+    gap:10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+.main2{
+    gap:10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+.TITULO-1{
+    font-weight: bold;
+    color: black;
+}
+.TITULO-2{
+    font-weight: bold;
+    color: white;
+}
+.TITULO-3{
+    font-weight: bold;
+    color: white;
+}
+/*--------FIN CUERPO--------*/
+/*--------INICIO FOOTER---------*/
+.footer1{
+    /*border: solid 3px yellow;*/
+    background-color: rgb(12, 12, 12);  
+     /*border: solid 3px red;*/
+     display: grid;
+     grid-template-rows: 50% 50%;   
+     align-content: end; 
+}
+
+.Redes a{
+    /*border: solid 3px orange;*/
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+}
+.Redes a:hover{
+    color: red;
+}
+
+.Derechos{
+    /*border: solid 3px blue;*/
+    color:white;
+    height: 30px;
+}
+.Derechos h1{
+    font-size: 15px;
+}
+/*-------FIN FOOTER--------*/
+/*-------VISTA MOBILE-------*/
+/*-------HEADER-----------*/
+@media (min-width: 375px) and (max-width: 414px) {
+    .vistaresponsive{
+        display:contents;
+        grid-area: header;
+    }
+    .header1{
+        display: none;
+    }
+    .Cuerpo{
+        display: none;
+    }
+    .body1{
+        display: grid;
+        grid-template-areas: 
+            "header"
+            "titulo1"
+            "titulo2"
+            "main1"
+            "titulo3"
+            "main2" 
+            "footer";
+    }
+    .main-responsive{
+        display: contents;
+        border: solid 3px blue;
+        padding-top: 200px;
+    }
+    .TITULO-1{
+        margin-top: 55px;
+    }
+}

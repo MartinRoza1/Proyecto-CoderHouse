@@ -22,7 +22,7 @@
 /*-------HEADER-------*/
 body{
     font-family: 'Montserrat', sans-serif;
-    background-image: url(..imagenes/Fondo.jpg); 
+    background-image: url(../Imagenes/Fondo.jpg); 
     padding: 0px;
     margin: 0px;
     display: grid;
@@ -53,12 +53,10 @@ body{
     transform: scale(1.2);
 }
 
-
 .menu{
     background-color: rgb(12, 12, 12);
     height: 73px;
     width: 100%;
-   
 }
 
 .navegador ul{

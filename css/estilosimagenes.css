@@ -1,3 +1,6 @@
+.vistaresponsive{
+    display: none;
+}
 body{
     font-family: 'Montserrat', sans-serif;
     background-image: url(../Imagenes/Fondo.jpg);
@@ -9,6 +12,7 @@ body{
 }
 /*-------HEADER-------*/
 .Navegador1{
+    border: solid 3px red;
     height: 79px;
     display: grid;
     grid-template-columns: 20% 80%;
@@ -70,6 +74,7 @@ body{
     justify-content: center;
 }
 .imagenes{
+    /*border: solid 3px red;*/
     display: flex;
     width: 600px;
     height: 430px;
@@ -85,7 +90,7 @@ body{
 
 .imagenes img:hover{
     cursor: crosshair;
-    width: 300px;
+    width: 200px;
     opacity: 1;
     filter: contrast(120%);
 }
@@ -94,6 +99,7 @@ body{
 
 .footer1{
     /*border: solid 3px yellow;*/
+    align-self: flex-end;
     background-color: rgb(12, 12, 12);
     height: 66px;    
 }
@@ -131,3 +137,26 @@ body{
     font-size: 15px;
 }
 /*---------FIN FOOTER---------*/
+/*----------------RESPONSIVE-----------------------------------*/
+@media (min-width: 375px) and (max-width: 414px) {
+    .vistaresponsive{
+        display:contents;
+    }
+    body{
+        border:solid 3px blue;
+        min-width: 375px;
+    }
+    .Navegador1{
+        display: none;
+    }
+    .carrusel{
+        margin: auto;
+        margin-top: 159px;
+    }
+    .imagenes{
+        /*border: solid 3px red;*/
+        display: flex;
+        width: 300px;
+        height: 330px;
+    }
+}
